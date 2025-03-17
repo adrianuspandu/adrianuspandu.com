@@ -12,9 +12,9 @@ export default function MyCorner() {
       <section id="heading" className="w-lg text-center mx-auto mt-15 mb-10">
         <h1 className="font-display font-bold text-6xl mb-4">My Corner</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Tempus faucibus faucibus enim
-          pretium rhoncus fames leo. Urna id tempor bibendum turpis libero vitae
-          risus id.
+          I could call this the "About" page, but where's the fun in that?
+          Instead, consider this a space to get to know me better. Stick around,
+          and you might just learn something new!
         </p>
       </section>
 
@@ -103,13 +103,29 @@ export default function MyCorner() {
             </h2>
           </div>
           <div className="flex flex-row justify-between">
-            <AlbumPick title="Blue" artist="Joni Mitchell" src={albumPlaceholder} />
-            <AlbumPick title="Blue" artist="Joni Mitchell" src={albumPlaceholder} />
-            <AlbumPick title="Blue" artist="Joni Mitchell" src={albumPlaceholder} />
-            <AlbumPick title="Blue" artist="Joni Mitchell" src={albumPlaceholder} />
+            <AlbumPick
+              title="Blue"
+              artist="Joni Mitchell"
+              src={albumPlaceholder}
+            />
+            <AlbumPick
+              title="Blue"
+              artist="Joni Mitchell"
+              src={albumPlaceholder}
+            />
+            <AlbumPick
+              title="Blue"
+              artist="Joni Mitchell"
+              src={albumPlaceholder}
+            />
+            <AlbumPick
+              title="Blue"
+              artist="Joni Mitchell"
+              src={albumPlaceholder}
+            />
           </div>
         </div>
-        
+
         {/* FILM PICKS */}
         <div className="flex flex-col">
           <div className="border-4 border-black bg-yellowAccent rounded-lg inline-block mb-5 mx-auto">
@@ -118,10 +134,26 @@ export default function MyCorner() {
             </h2>
           </div>
           <div className="flex flex-row justify-between">
-            <FilmPoster title="Dazed and Confused" src={posterPlaceholder} year="1993"/>
-            <FilmPoster title="Dazed and Confused" src={posterPlaceholder} year="1993"/>
-            <FilmPoster title="Dazed and Confused" src={posterPlaceholder} year="1993"/>
-            <FilmPoster title="Dazed and Confused" src={posterPlaceholder} year="1993"/>
+            <FilmPoster
+              title="Dazed and Confused"
+              src={posterPlaceholder}
+              year="1993"
+            />
+            <FilmPoster
+              title="Dazed and Confused"
+              src={posterPlaceholder}
+              year="1993"
+            />
+            <FilmPoster
+              title="Dazed and Confused"
+              src={posterPlaceholder}
+              year="1993"
+            />
+            <FilmPoster
+              title="Dazed and Confused"
+              src={posterPlaceholder}
+              year="1993"
+            />
           </div>
         </div>
 
@@ -134,10 +166,38 @@ export default function MyCorner() {
           </div>
 
           <div className="grid grid-cols-2 gap-y-8">
-            <MilestoneCard distance="5K" pbTime="27:28" pbDate="July 2024" goalTime="Sub 25" goalDate="by end of 2025" headingColor="text-greenAccent"/>
-            <MilestoneCard distance="10K" pbTime="1:08:13" pbDate="May 2024" goalTime="Sub 25" goalDate="by end of 2025" headingColor="text-purpleAccent"/>
-            <MilestoneCard distance="21,1K" pbTime="N/A" pbDate="N/A" goalTime="Finish" goalDate="by end of 2025" headingColor="text-pinkAccent"/>
-            <MilestoneCard distance="42,2K" pbTime="N/A" pbDate="N/A" goalTime="Finish" goalDate="by end of 2026" headingColor="text-yellowAccent"/>
+            <MilestoneCard
+              distance="5K"
+              pbTime="27:28"
+              pbDate="July 2024"
+              goalTime="Sub 25"
+              goalDate="by end of 2025"
+              headingColor="text-greenAccent"
+            />
+            <MilestoneCard
+              distance="10K"
+              pbTime="1:08:13"
+              pbDate="May 2024"
+              goalTime="Sub 25"
+              goalDate="by end of 2025"
+              headingColor="text-purpleAccent"
+            />
+            <MilestoneCard
+              distance="21,1K"
+              pbTime="N/A"
+              pbDate="N/A"
+              goalTime="Finish"
+              goalDate="by end of 2025"
+              headingColor="text-pinkAccent"
+            />
+            <MilestoneCard
+              distance="42,2K"
+              pbTime="N/A"
+              pbDate="N/A"
+              goalTime="Finish"
+              goalDate="by end of 2026"
+              headingColor="text-yellowAccent"
+            />
           </div>
         </div>
       </section>

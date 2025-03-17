@@ -10,9 +10,9 @@ export default function Projects() {
       <section id="heading" className="w-lg text-center mx-auto mt-15 mb-10">
         <h1 className="font-display font-bold text-6xl mb-4">Projects</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Tempus faucibus faucibus enim
-          pretium rhoncus fames leo. Urna id tempor bibendum turpis libero vitae
-          risus id.
+          Here you can find some projects that I've worked on throughout my
+          learning journey. Feel free to explore and I hope you find these
+          projects to be interesting.
         </p>
       </section>
 

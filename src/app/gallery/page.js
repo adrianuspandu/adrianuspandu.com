@@ -1,43 +1,51 @@
 "use client";
 
 import Image from "next/image";
-import useMasonry from "../utils/useMasonry";
-import { getImageURL, listImages } from "../utils/storage";
+import { listImages } from "../utils/storage";
 import { useEffect, useState } from "react";
+import Masonry from "react-masonry-css";
 
 export default function gallery() {
-  const [imagesURL, setImagesURL] = useState([])
-  const masonryContainer = useMasonry();
+  const [imagesURL, setImagesURL] = useState([]);
 
   useEffect(() => {
-    const fetchImages = async() => {
-      const urls = await listImages("images/")
-      setImagesURL(urls)
-    }
-    fetchImages()
+    const fetchImages = async () => {
+      const urls = await listImages("images/");
+      setImagesURL(urls);
+    };
+    fetchImages();
   }, []);
 
-  const images = imagesURL.map((url, index) => {
+  const masonryItems = imagesURL.map((url, index) => {
     return (
-      <Image className="brutal rounded-md border-2 border-black" key={index} src={url} width={400} height={500} alt="gallery image" style={{objectFit: "cover"}} />
-    )
-  })
+      <Image
+        key={index}
+        className="brutal rounded-md border-2 border-black"
+        src={url}
+        width={400}
+        height={400}
+        alt="gallery image"
+      />
+    );
+  });
   return (
     <>
       <section id="heading" className="w-lg text-center mx-auto mt-15 mb-10">
         <h1 className="font-display font-bold text-6xl mb-4">Gallery</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Tempus faucibus faucibus enim
-          pretium rhoncus fames leo. Urna id tempor bibendum turpis libero vitae
-          risus id.
+          Here is a section where I share photos of beautiful places I've
+          visited and the memorable moments I've experienced. Take a glimpse
+          into my journey through these snapshots!
         </p>
       </section>
       <section>
-        <div
-          className="grid items-start gap-4 grid-cols-3 w-4xl mx-auto"
+        <Masonry
+          breakpointCols={{ default: 4, 1100: 3, 700: 2, 500: 1 }}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
         >
-          {images}
-        </div>
+          {masonryItems}
+        </Masonry>
       </section>
     </>
   );
