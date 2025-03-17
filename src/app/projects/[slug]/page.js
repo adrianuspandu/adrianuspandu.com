@@ -21,7 +21,7 @@ export default async function ProjectItemPage({ params }) {
     });
 
   return (
-    <div className="w-xl mx-auto">
+    <div className="w-xl mx-auto pt-16">
       <section>
         <h1 className="font-bold text-6xl mb-4">
             Lorem Ipsum
@@ -31,7 +31,7 @@ export default async function ProjectItemPage({ params }) {
         </div>
       </section>
       <article className="mt-10">
-        <Link href="/projects"><Image className="inline mr-2" src= {backArrow}/>Back to all projects</Link>
+        <Link className="underline hover:text-white" href="/projects"><Image className="inline mr-2" src= {backArrow}/>Back to all projects</Link>
         <Post />
       </article>
     </div>

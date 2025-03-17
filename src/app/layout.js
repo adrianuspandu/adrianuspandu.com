@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${lexend.variable} ${lexendMega.variable} antialiased`}>
         <Navigation />
-        <main>
+        <main className="pt-25">
           {children}
         </main>
         <Footer />
