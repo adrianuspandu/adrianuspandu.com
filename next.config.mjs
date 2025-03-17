@@ -1,9 +1,15 @@
-import createMDX from '@next/mdx'
+import createMDX from '@next/mdx';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    pageExtensions: ['js', 'jsx', 'md', 'mdx']
+  images: {
+    domains: ['firebasestorage.googleapis.com'],
+  },
+  pageExtensions: ['js', 'jsx', 'md', 'mdx'],
 };
 
-const withMDX = createMDX({})
+// Apply MDX configuration
+const withMDX = createMDX({});
 
+// Export the merged config
 export default withMDX(nextConfig);
