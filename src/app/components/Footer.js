@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="flex flex-col items-center gap-4 py-20 border-t-16 border-black mt-20">
       <Link
         href="#"
-        className="brutal text-lg py-3 px-4 border-2 border-black rounded-md"
+        className="brutal text-md md:text-lg py-3 px-4 border-2 border-black rounded-md"
       >
         <Image
           className="inline mr-2"

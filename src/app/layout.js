@@ -22,11 +22,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+
       <body className={`${lexend.variable} ${lexendMega.variable} antialiased`}>
         <Navigation />
-        <main className="pt-25">
-          {children}
-        </main>
+        <main className="pt-10 lg:pt-25">{children}</main>
         <Footer />
       </body>
     </html>

@@ -9,9 +9,9 @@ import AlbumPick from "../components/AlbumPick";
 export default function MyCorner() {
   return (
     <>
-      <section id="heading" className="w-lg text-center mx-auto mt-15 mb-10">
-        <h1 className="font-display font-bold text-6xl mb-4">My Corner</h1>
-        <p>
+      <section id="heading" className="max-w-lg text-center mx-auto mt-15 mb-10 px-4">
+        <h1 className="font-display font-bold text-4xl lg:text-6xl mb-4">My Corner</h1>
+        <p className="text-sm lg:text-base">
           I could call this the "About" page, but where's the fun in that?
           Instead, consider this a space to get to know me better. Stick around,
           and you might just learn something new!
@@ -20,18 +20,18 @@ export default function MyCorner() {
 
       <section
         id="content-section"
-        className="flex flex-col w-4xl mx-auto gap-20"
+        className="flex flex-col max-w-4xl mx-auto gap-20 px-4"
       >
         {/* WHO IS PANDU */}
-        <div className="flex flex-row items-center gap-20">
+        <div className="flex flex-row items-center justify-center gap-20">
           <div className="flex flex-col items-start">
-            <div className="border-4 border-black bg-purpleAccent rounded-lg inline-block mb-4">
-              <h2 className="text-4xl text-center font-display font-bold px-6 py-3">
+            <div className="mx-auto md:mx-0 border-4 border-black bg-purpleAccent rounded-lg inline-block mb-4">
+              <h2 className="text-2xl lg:text-4xl text-center font-display font-bold px-6 py-3">
                 Who is Pandu?
               </h2>
             </div>
 
-            <p>
+            <p className="text-sm lg:text-base max-w-lg">
               Lorem ipsum dolor sit amet consectetur. Pharetra amet egestas
               tortor risus. Magna eu et ornare pulvinar dapibus. Erat aliquet
               duis eu lacus massa ac urna ut. Diam suspendisse viverra integer
@@ -45,7 +45,7 @@ export default function MyCorner() {
           </div>
 
           <Image
-            className="w-3xs object-cover brutal border-2 border-black rounded-lg"
+            className="hidden md:block w-3xs object-cover brutal border-2 border-black rounded-lg"
             src={profilePicture}
             alt="Pandu smiling at the camera"
           />
@@ -54,13 +54,13 @@ export default function MyCorner() {
         {/* QUOTE TO LIVE BY */}
         <div className="flex flex-col items-center">
           <div className="border-4 border-black bg-secondary rounded-lg inline-block mb-5">
-            <h2 className="text-4xl text-center font-display font-bold px-6 py-3">
+            <h2 className="text-2xl lg:text-4xl text-center font-display font-bold px-6 py-3">
               Quote to live by
             </h2>
           </div>
 
           <div className="flex flex-col border-4 border-black rounded-lg py-4 px-6">
-            <h3 className="text-4xl font-display mb-4">
+            <h3 className="text-xl lg:text-4xl font-display mb-4">
               “But for now we are young, let us lay in the sun, and count every
               beautiful thing we can see”
             </h3>
@@ -70,19 +70,19 @@ export default function MyCorner() {
 
         {/* PANDU IS LISTENING TO */}
         <div>
-          <div className="border-4 border-black bg-greenAccent rounded-lg inline-block mb-5">
-            <h2 className="text-4xl text-background text-center font-display font-bold px-6 py-3">
+          <div className="mx-auto md:mx-0 border-4 border-black bg-greenAccent rounded-lg inline-block mb-5">
+            <h2 className="text-2xl lg:text-4xl text-background text-center font-display font-bold px-6 py-3">
               Pandu is listening to...
             </h2>
           </div>
 
-          <div className="flex flex-row items-center justify-between">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <Image
               src={albumPlaceholder}
               alt="album"
-              className="w-2xs object-cover brutal border-2 border-black rounded-lg"
+              className="max-w-2xs object-cover brutal border-2 border-black rounded-lg"
             />
-            <div className="w-lg">
+            <div className="max-w-[300px] md:max-w-md lg:max-w-lg">
               <h3 className="font-display text-4xl font-bold mb-2">Blue</h3>
               <p className="font-display text-2xl text-grayText mb-4">
                 Joni Mitchell
@@ -98,11 +98,11 @@ export default function MyCorner() {
         {/* ALBUM PICKS */}
         <div className="flex flex-col">
           <div className="border-4 border-black bg-purpleAccent rounded-lg inline-block mb-5 mx-auto">
-            <h2 className="text-4xl text-center font-display font-bold px-6 py-3">
+            <h2 className="text-2xl lg:text-4xl text-center font-display font-bold px-6 py-3">
               Album Picks
             </h2>
           </div>
-          <div className="flex flex-row justify-between">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-auto">
             <AlbumPick
               title="Blue"
               artist="Joni Mitchell"
@@ -129,11 +129,11 @@ export default function MyCorner() {
         {/* FILM PICKS */}
         <div className="flex flex-col">
           <div className="border-4 border-black bg-yellowAccent rounded-lg inline-block mb-5 mx-auto">
-            <h2 className="text-4xl text-background text-center font-display font-bold px-6 py-3">
+            <h2 className="text-2xl lg:text-4xl text-background text-center font-display font-bold px-6 py-3">
               Film Picks
             </h2>
           </div>
-          <div className="flex flex-row justify-between">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-auto">
             <FilmPoster
               title="Dazed and Confused"
               src={posterPlaceholder}
@@ -160,12 +160,12 @@ export default function MyCorner() {
         {/* RUNNING MILESTONES */}
         <div className="flex flex-col">
           <div className="border-4 border-black bg-secondary rounded-lg inline-block mb-5 mx-auto">
-            <h2 className="text-4xl text-center font-display font-bold px-6 py-3">
+            <h2 className="text-2xl lg:text-4xl text-center font-display font-bold px-6 py-3">
               Running Milestones
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 gap-y-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 gap-x-8 mx-auto">
             <MilestoneCard
               distance="5K"
               pbTime="27:28"

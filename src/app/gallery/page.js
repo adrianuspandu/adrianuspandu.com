@@ -30,9 +30,9 @@ export default function gallery() {
   });
   return (
     <>
-      <section id="heading" className="w-lg text-center mx-auto mt-15 mb-10">
-        <h1 className="font-display font-bold text-6xl mb-4">Gallery</h1>
-        <p>
+      <section id="heading" className="max-w-lg text-center mx-auto mt-15 mb-10 px-4">
+        <h1 className="font-display font-bold text-4xl lg:text-6xl mb-4">Gallery</h1>
+        <p className="text-sm lg:text-base">
           Here is a section where I share photos of beautiful places I've
           visited and the memorable moments I've experienced. Take a glimpse
           into my journey through these snapshots!
