@@ -43,7 +43,7 @@ export default function Home() {
             Highlighted Projects
           </h2>
         </div>
-        <div className="grid grid-cols-3 mx-auto gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-4">
           <ProjectCard name="jukeboxd" />
           <ProjectCard name="my-mensa" />
           <ProjectCard name="museum-lumina" />
