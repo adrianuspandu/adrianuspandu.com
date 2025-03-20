@@ -10,6 +10,7 @@
   --purpleAccent: #7d61c5;
   --greenAccent: #2c9b63;
   --grayText: #929292;
+  --dottedGrid: #2A2F2C;
 }
 
 @theme inline {
@@ -22,6 +23,7 @@
   --color-purpleAccent: var(--purpleAccent);
   --color-greenAccent: var(--greenAccent);
   --color-grayText: var(--grayText);
+  --color-dottedGrid: var(--dottedGrid);
   --font-sans: var(--font-lexend);
   --font-display: var(--font-lexend-mega);
 }
@@ -37,6 +39,7 @@
     --purpleAccent: #7d61c5;
     --greenAccent: #2c9b63;
     --grayText: #929292;
+    --dottedGrid: #2A2F2C;
   }
 }
 

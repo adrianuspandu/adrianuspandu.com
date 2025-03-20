@@ -9,18 +9,25 @@ import AlbumPick from "../components/AlbumPick";
 export default function MyCorner() {
   return (
     <>
-      <section id="heading" className="max-w-lg text-center mx-auto mt-15 mb-10 px-4">
-        <h1 className="font-display font-bold text-4xl lg:text-6xl mb-4">My Corner</h1>
-        <p className="text-sm lg:text-base">
-          I could call this the "About" page, but where's the fun in that?
-          Instead, consider this a space to get to know me better. Stick around,
-          and you might just learn something new!
-        </p>
+      <section
+        id="heading"
+        className="[background-image:radial-gradient(circle_at_2px_2px,var(--dottedGrid)_2px,transparent_0)] [background-size:30px_30px] pb-10 mb-5"
+      >
+        <div className="max-w-lg text-center mx-auto pt-30 lg:pt-40 px-4">
+          <h1 className="font-display font-bold text-4xl lg:text-6xl mb-4">
+            My Corner
+          </h1>
+          <p className="text-sm lg:text-base">
+            I could call this the "About" page, but where's the fun in that?
+            Instead, consider this a space to get to know me better. Stick
+            around, and you might just learn something new!
+          </p>
+        </div>
       </section>
 
       <section
         id="content-section"
-        className="flex flex-col max-w-4xl mx-auto gap-20 px-4"
+        className="flex flex-col max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto gap-20 px-4"
       >
         {/* WHO IS PANDU */}
         <div className="flex flex-row items-center justify-center gap-20">
@@ -32,15 +39,10 @@ export default function MyCorner() {
             </div>
 
             <p className="text-sm lg:text-base max-w-lg">
-              Lorem ipsum dolor sit amet consectetur. Pharetra amet egestas
-              tortor risus. Magna eu et ornare pulvinar dapibus. Erat aliquet
-              duis eu lacus massa ac urna ut. Diam suspendisse viverra integer
-              tincidunt suspendisse pharetra. Sit sodales ut vivamus semper
-              augue. Fringilla duis mattis diam aliquam sed magnis non blandit.
-              Sit quam sit id elementum id sit sed augue volutpat. Dignissim
-              bibendum nunc eu habitant. Tellus diam tempor feugiat a gravida
-              amet varius. Quis neque laoreet sit augue facilisis dictum semper
-              vitae sapien. Justo vitae velit at sed velit.
+              Pandu is an electrical engineering student at FH Aachen. He is
+              currently training to be a CSS wizard and a Javascript master.
+              Outside of coding, he enjoys running long distance, listening to
+              good music, and play bass.
             </p>
           </div>
 
@@ -64,19 +66,19 @@ export default function MyCorner() {
               “But for now we are young, let us lay in the sun, and count every
               beautiful thing we can see”
             </h3>
-            <p className="text-2xl font-display text-grayText">- Jeff Mangum</p>
+            <p className="text-lg text-2xl font-display text-grayText">
+              - Jeff Mangum
+            </p>
           </div>
         </div>
 
         {/* PANDU IS LISTENING TO */}
-        <div>
-          <div className="mx-auto md:mx-0 border-4 border-black bg-greenAccent rounded-lg inline-block mb-5">
-            <h2 className="text-2xl lg:text-4xl text-background text-center font-display font-bold px-6 py-3">
-              Pandu is listening to...
-            </h2>
-          </div>
+        <div className="flex flex-col items:start">
+          <h2 className="mx-auto md:ml-0 md:mr-auto border-4 border-black bg-greenAccent rounded-lg mb-5 text-2xl lg:text-4xl text-background text-center font-display font-bold px-6 py-3">
+            Pandu is listening to...
+          </h2>
 
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="flex flex-col md:flex-row items-center gap-8">
             <Image
               src={albumPlaceholder}
               alt="album"

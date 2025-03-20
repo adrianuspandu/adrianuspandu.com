@@ -6,10 +6,10 @@ import ProjectCard from "./components/ProjectCard";
 
 export default function Home() {
   return (
-    <>
+    <div className="[background-image:radial-gradient(circle_at_2px_2px,var(--dottedGrid)_2px,transparent_0)] [background-size:30px_30px]">
       <section
         id="hero"
-        className="flex flex-col md:flex-col-reverse lg:flex-row justify-center gap-10 mt-10 px-10 lg:px-30 items-center min-h-[80vh] mb-20"
+        className="flex flex-col md:flex-col-reverse lg:flex-row justify-center gap-10 pt-30 lg:pt-40 px-10 lg:px-30 items-center min-h-[60vh] mb-20"
       >
         <div className="max-w-lg">
           <h1 className="font-display text-4xl/12 xl:text-5xl/16 font-bold mb-7">
@@ -37,7 +37,7 @@ export default function Home() {
       </section>
 
       {/* HIGHLIGHTED PROJECTS */}
-      <section id="highlighted-projects" className="flex flex-col px-8">
+      <section id="highlighted-projects" className="flex flex-col px-8 pb-20">
         <div className="border-4 border-black bg-yellowAccent rounded-lg inline-block mx-auto mb-8">
           <h2 className="text-2xl lg:text-4xl text-background text-center font-display font-bold px-6 py-3">
             Highlighted Projects
@@ -49,6 +49,6 @@ export default function Home() {
           <ProjectCard name="museum-lumina" />
         </div>
       </section>
-    </>
+    </div>
   );
 }

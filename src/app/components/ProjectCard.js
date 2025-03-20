@@ -17,7 +17,7 @@ export default function ProjectCard({ name }) {
     );
   });
   return (
-    <div className="w-xs xl:w-sm flex flex-col gap-6 border-2 border-black rounded-md shadow-[4px_4px_black] py-3 px-4">
+    <div className="bg-background w-xs xl:w-sm flex flex-col gap-6 border-2 border-black rounded-md shadow-[4px_4px_black] py-3 px-4">
       <Image
         className="object-cover w-full h-[240px] rounded-md"
         src={projectPlaceholder}

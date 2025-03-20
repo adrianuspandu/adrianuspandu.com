@@ -30,13 +30,20 @@ export default function gallery() {
   });
   return (
     <>
-      <section id="heading" className="max-w-lg text-center mx-auto mt-15 mb-10 px-4">
-        <h1 className="font-display font-bold text-4xl lg:text-6xl mb-4">Gallery</h1>
-        <p className="text-sm lg:text-base">
-          Here is a section where I share photos of beautiful places I've
-          visited and the memorable moments I've experienced. Take a glimpse
-          into my journey through these snapshots!
-        </p>
+      <section
+        id="heading"
+        className="[background-image:radial-gradient(circle_at_2px_2px,var(--dottedGrid)_2px,transparent_0)] [background-size:30px_30px] pb-10 mb-5"
+      >
+        <div className="max-w-lg text-center mx-auto pt-30 lg:pt-40 px-4">
+          <h1 className="font-display font-bold text-4xl lg:text-6xl mb-4">
+            Gallery
+          </h1>
+          <p className="text-sm lg:text-base">
+            Here is a section where I share photos of beautiful places I've
+            visited and the memorable moments I've experienced. Take a glimpse
+            into my journey through these snapshots!
+          </p>
+        </div>
       </section>
       <section>
         <Masonry
