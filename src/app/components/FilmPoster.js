@@ -1,6 +1,4 @@
 import Image from "next/image";
-import posterPlaceholder from "/public/images/poster-placeholder.jpg"
-
 export default function FilmPoster({ src, title, year }) {
   return (
     <div className="max-w-[300px]">

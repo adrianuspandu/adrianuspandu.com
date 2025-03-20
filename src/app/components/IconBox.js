@@ -31,7 +31,7 @@ export default function IconBox() {
         key={icon.name}
         href={icon.href}
         target="_blank"
-        className="p-3 border-2 border-black rounded-xl w-[48px] brutal"
+        className="p-3 border-2 border-black rounded-xl w-[48px] brutal bg-background"
       >
         <Image src={icon.src} alt={`${icon.name} icon`} />
       </Link>

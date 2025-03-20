@@ -1,10 +1,21 @@
 import Image from "next/image";
 import profilePicture from "/public/images/profile-picture.jpg";
-import albumPlaceholder from "/public/images/album-placeholder.jpg";
-import posterPlaceholder from "/public/images/poster-placeholder.jpg";
 import MilestoneCard from "../components/MilestoneCard";
 import FilmPoster from "../components/FilmPoster";
 import AlbumPick from "../components/AlbumPick";
+
+// Album Covers Import
+import blue from "../../../public/images/albums/blue.jpg"
+import aeroplane from "../../../public/images/albums/aeroplane.jpg"
+import afut from "../../../public/images/albums/afut.jpg"
+import revolver from "../../../public/images/albums/revolver.jpg"
+import sinister from "../../../public/images/albums/sinister.jpg"
+
+// Film Posters Import
+import dazedAndConfused from "../../../public/images/posters/dazed-and-confused.jpg"
+import beforeSunset from "../../../public/images/posters/before-sunset.jpg"
+import returnOfTheKing from "../../../public/images/posters/return-of-the-king.jpg"
+import se7en from "../../../public/images/posters/se7en.jpg"
 
 export default function MyCorner() {
   return (
@@ -42,7 +53,7 @@ export default function MyCorner() {
               Pandu is an electrical engineering student at FH Aachen. He is
               currently training to be a CSS wizard and a Javascript master.
               Outside of coding, he enjoys running long distance, listening to
-              good music, and play bass.
+              good music, and playing bass.
             </p>
           </div>
 
@@ -80,8 +91,8 @@ export default function MyCorner() {
 
           <div className="flex flex-col md:flex-row items-center gap-8">
             <Image
-              src={albumPlaceholder}
-              alt="album"
+              src={blue}
+              alt="Album Cover of Joni Mitchell's Blue"
               className="max-w-2xs object-cover brutal border-2 border-black rounded-lg"
             />
             <div className="max-w-[300px] md:max-w-md lg:max-w-lg">
@@ -90,8 +101,7 @@ export default function MyCorner() {
                 Joni Mitchell
               </p>
               <p>
-                Deserunt eu cillum deserunt non commodo amet eu cupidatat quis
-                et id commodo laborum.
+                Just watched "A Complete Unknown" and I'm currently listening to some folk music lately. I recently discovered Joni Mitchell and I was very subdued by her melodic songwriting.
               </p>
             </div>
           </div>
@@ -106,24 +116,24 @@ export default function MyCorner() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-auto">
             <AlbumPick
-              title="Blue"
-              artist="Joni Mitchell"
-              src={albumPlaceholder}
+              title="In The Aeroplane Over The Sea"
+              artist="Neutral Milk Hotel"
+              src={aeroplane}
             />
             <AlbumPick
-              title="Blue"
-              artist="Joni Mitchell"
-              src={albumPlaceholder}
+              title="Ants From Up There"
+              artist="Black Country, New Road"
+              src={afut}
             />
             <AlbumPick
-              title="Blue"
-              artist="Joni Mitchell"
-              src={albumPlaceholder}
+              title="Revolver"
+              artist="The Beatles"
+              src={revolver}
             />
             <AlbumPick
-              title="Blue"
-              artist="Joni Mitchell"
-              src={albumPlaceholder}
+              title="If You're Feeling Sinister"
+              artist="Belle & Sebastian"
+              src={sinister}
             />
           </div>
         </div>
@@ -138,23 +148,23 @@ export default function MyCorner() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-auto">
             <FilmPoster
               title="Dazed and Confused"
-              src={posterPlaceholder}
+              src={dazedAndConfused}
               year="1993"
             />
             <FilmPoster
-              title="Dazed and Confused"
-              src={posterPlaceholder}
-              year="1993"
+              title="Before Sunset"
+              src={beforeSunset}
+              year="2004"
             />
             <FilmPoster
-              title="Dazed and Confused"
-              src={posterPlaceholder}
-              year="1993"
+              title="The Lord of the Rings: The Return of the King"
+              src={returnOfTheKing}
+              year="2003"
             />
             <FilmPoster
-              title="Dazed and Confused"
-              src={posterPlaceholder}
-              year="1993"
+              title="Se7en"
+              src={se7en}
+              year="1995"
             />
           </div>
         </div>

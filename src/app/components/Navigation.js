@@ -47,7 +47,7 @@ export default function Navigation() {
         <BrutalNavLink href="/my-corner">My Corner</BrutalNavLink>
       </nav>
 
-      <nav className="fixed lg:hidden flex flex-col w-full backdrop-blur-lg">
+      <nav className="z-1 fixed lg:hidden flex flex-col w-full backdrop-blur-lg">
         <div className="bg-black/30 w-full py-4 px-8">
           <button
             onClick={handleClick}

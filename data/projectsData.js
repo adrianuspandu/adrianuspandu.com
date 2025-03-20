@@ -4,27 +4,36 @@ export const projectsData = [
     title: "Jukeboxd",
     description:
       "Exercitation esse proident occaecat sint officia veniam duis id tempor sit pariatur ut et.",
-    img: "/public/images/project-placeholder.jpg",
+    img: "projects/jukeboxd.jpg",
     href: "/projects/jukeboxd",
-    tags: ["Web Dev", "Design", "Robotics", "Physics", "Mathematics"]
+    tags: ["Web Design", "React", "React Router", "Tailwind CSS"]
   },
   {
     name: "my-mensa",
     title: "My Mensa",
     description:
       "Exercitation esse proident occaecat sint officia veniam duis id tempor sit pariatur ut et.",
-    img: "/public/images/project-placeholder.jpg",
+    img: "projects/my-mensa.jpg",
     href: "/projects/my-mensa",
-    tags: ["Web Dev", "UX"]
+    tags: ["App Design", "UX Design"]
   },
   {
     name: "museum-lumina",
     title: "Museum Lumina",
     description:
       "Exercitation esse proident occaecat sint officia veniam duis id tempor sit pariatur ut et.",
-    img: "/public/images/project-placeholder.jpg",
+    img: "projects/museum-lumina.jpg",
     href: "/projects/museum-lumina",
-    tags: ["Web Dev", "UX"]
+    tags: ["Web Design", "UX Design"]
+  },
+  {
+    name: "bondi",
+    title: "Bondi",
+    description:
+      "Exercitation esse proident occaecat sint officia veniam duis id tempor sit pariatur ut et.",
+    img: "projects/bondi.jpg",
+    href: "/projects/bondi",
+    tags: ["Mobile Design", "UX Design"]
   }
   
 ];

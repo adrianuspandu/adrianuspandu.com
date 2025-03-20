@@ -6,7 +6,9 @@ import { storage } from "./firebase";
 export const getImageURL = async (filePath) => {
     try {
         const pathReference = ref(storage, filePath);
-        return await getDownloadURL(pathReference)
+        const url = await getDownloadURL(pathReference)
+        console.log(url)
+        return url
     } catch(error) {
         console.error("error fetching file URL", error)
         return null

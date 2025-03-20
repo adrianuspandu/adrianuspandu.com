@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import IconBox from "./components/IconBox";
 import HeroImage from "/public/hero-image.svg";
@@ -9,7 +10,7 @@ export default function Home() {
     <div className="[background-image:radial-gradient(circle_at_2px_2px,var(--dottedGrid)_2px,transparent_0)] [background-size:30px_30px]">
       <section
         id="hero"
-        className="flex flex-col md:flex-col-reverse lg:flex-row justify-center gap-10 pt-30 lg:pt-40 px-10 lg:px-30 items-center min-h-[60vh] mb-20"
+        className="flex flex-col md:flex-col-reverse lg:flex-row justify-center gap-10 pt-30 lg:pt-50 px-10 lg:px-30 items-center lg:items-start mb-40"
       >
         <div className="max-w-lg">
           <h1 className="font-display text-4xl/12 xl:text-5xl/16 font-bold mb-7">
