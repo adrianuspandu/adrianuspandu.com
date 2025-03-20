@@ -101,7 +101,7 @@ export default function MyCorner() {
                 Joni Mitchell
               </p>
               <p>
-                Just watched "A Complete Unknown" and I'm currently listening to some folk music lately. I recently discovered Joni Mitchell and I was very subdued by her melodic songwriting.
+                Just watched "A Complete Unknown" and I've been listening to some folk music lately. I recently discovered Joni Mitchell and was very subdued by her melodic songwriting.
               </p>
             </div>
           </div>
@@ -157,7 +157,7 @@ export default function MyCorner() {
               year="2004"
             />
             <FilmPoster
-              title="The Lord of the Rings: The Return of the King"
+              title="The Return of the King"
               src={returnOfTheKing}
               year="2003"
             />

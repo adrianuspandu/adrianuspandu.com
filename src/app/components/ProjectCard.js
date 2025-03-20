@@ -1,5 +1,4 @@
 "use client"
-import projectPlaceholder from "/public/images/project-placeholder.jpg";
 import { projectsData } from "../../../data/projectsData";
 import Image from "next/image";
 import BrutalLink from "./BrutalLink";
@@ -7,7 +6,7 @@ import { getImageURL } from "../utils/storage";
 import { useEffect, useState } from "react";
 
 export default function ProjectCard({ name }) {
-  const [myImage, setMyImage] = useState(projectPlaceholder)
+  const [myImage, setMyImage] = useState("")
 
   const projectData = projectsData.find((project) => project.name === name);
   const projectTags = projectData.tags.map((tag) => {

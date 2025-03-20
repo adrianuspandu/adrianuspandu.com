@@ -35,7 +35,7 @@ export default function Navigation() {
   );
 
   const menuListClassName = clsx(
-    "bg-black/80 flex flex-col gap-10 items-center py-8",
+    "bg-black/80 flex flex-col gap-10 items-center py-8 hover:underline",
     isOpen ? "static" : "hidden"
   );
   return (
@@ -51,7 +51,7 @@ export default function Navigation() {
         <div className="bg-black/30 w-full py-4 px-8">
           <button
             onClick={handleClick}
-            className="font-display font-bold border border-white py-2 px-4 rounded-lg"
+            className="font-display font-bold border border-white py-2 px-4 rounded-lg cursor-pointer hover:bg-black duration-200"
           >
             {isOpen ? "Close" : "Menu"}
           </button>
