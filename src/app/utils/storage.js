@@ -7,7 +7,6 @@ export const getImageURL = async (filePath) => {
     try {
         const pathReference = ref(storage, filePath);
         const url = await getDownloadURL(pathReference)
-        console.log(url)
         return url
     } catch(error) {
         console.error("error fetching file URL", error)
