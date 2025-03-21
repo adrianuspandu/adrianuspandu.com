@@ -5,7 +5,7 @@ import { listImages } from "../utils/storage";
 import { useEffect, useState } from "react";
 import Masonry from "react-masonry-css";
 
-export default function gallery() {
+export default function Gallery() {
   const [imagesURL, setImagesURL] = useState([]);
 
   useEffect(() => {
