@@ -5,7 +5,7 @@ import backArrow from "../../../../public/icons/back-arrow.svg";
 
 export default async function ProjectItemPage({ params }) {
   const { slug } = await params;
-  const { default: Post } = await import(`../../content/${slug}.mdx`);
+  const { default: Post } = await import(`../../content/${slug}/${slug}.mdx`);
 
   const projectData = projectsData.find((project) => project.name === slug);
 
@@ -24,7 +24,7 @@ export default async function ProjectItemPage({ params }) {
     <>
       <section className="[background-image:radial-gradient(circle_at_2px_2px,var(--dottedGrid)_2px,transparent_0)] [background-size:30px_30px] pt-30 lg:pt-40 pb-10 mb-5">
         <h1 className="font-bold text-5xl text-center md:text-6xl mb-8">
-          Lorem Ipsum
+          {projectData.title}
         </h1>
         <div className="flex flex-row flex-wrap gap-3 justify-center">
           {projectTags}

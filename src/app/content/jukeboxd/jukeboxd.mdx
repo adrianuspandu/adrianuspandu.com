@@ -1,0 +1,125 @@
+import Image from "next/image";
+import jukeboxdInAction from "./jukeboxd-in-action.gif";
+import wireframes from "./wireframes.jpg";
+import mock from "./mock.jpg";
+
+## Overview
+
+Everyone loves music. I guess it's safe to say that the statement is no longer an opinion but more of a fact. In today's world, where streaming services are common, we have so many options that it can sometimes be difficult to have a focused music-listening experience.
+
+Jukeboxd allows users to rate and review albums, add albums to their "Want to Listen" list, and keep up with new album releases. You can [try the web app](https://jukeboxd-two.vercel.app/) for yourself or visit the website's [GitHub repository](https://github.com/adrianuspandu/jukeboxd).
+
+<figure className="mt-10">
+  <Image
+    src={jukeboxdInAction}
+    alt="Users can rate and review albums using Jukeboxd"
+  />
+  <figcaption className="text-[gray] text-sm text-center mt-2">
+    Users can rate and review albums using Jukeboxd
+  </figcaption>
+</figure>
+
+The idea for this project comes from my interest in music and my struggle to enjoy it in an increasingly distracting world. I'm also a regular [Letterboxd](https://letterboxd.com/) user, which inspired the name Jukeboxd (not very creative, I know).
+
+I am aware of existing music/album tracker websites like [RateYourMusic](https://rateyourmusic.com) and [Discogs](https://www.discogs.com/), but I wanted to create a similar app using the [React Router Library](https://reactrouter.com/) and the [Spotify Web API](https://developer.spotify.com/documentation/web-api/) for this project.
+
+## Design Process
+
+Before I started development, I wanted a clear design to follow. I aimed for a simple and intuitive interface and came up with the idea of placing a prominent search bar at the center of the homepage.
+
+I also wanted to learn React Router, so I decided to create a navigation bar where users can navigate between four main pages: Home, New Releases, My Albums, and About.
+
+### Wireframes
+
+Wireframing is very useful for generating ideas. Normally, I sketch wireframes by hand because it helps me quickly express random thoughts without distractions. However, for efficiency, I decided to create them directly in Figma. Wireframing allowed me to draft layouts quickly without worrying about discarding them if they didn't solve the problem.
+
+During this process, I decided that album covers should be the focal point. I wanted them to be high in the visual hierarchy, making them large to mimic the feeling of browsing for albums in a record store.
+
+<figure className="mt-10">
+  <Image src={wireframes} alt="Initial wireframes of Jukeboxd" />
+  <figcaption className="text-[gray] text-sm text-center mt-2">
+    Initial wireframes of Jukeboxd
+  </figcaption>
+</figure>
+
+### Mock
+
+After finalizing the wireframes, I applied colors and typography to the design. I kept things simple and clean by using a sans-serif font and generated a color palette using [Realtime Colors](https://www.realtimecolors.com). I've used this tool so much that I feel like I'm over-relying on it—but if you struggle with color theory like I do, I highly recommend checking it out!
+
+At this stage, I also realized the importance of designing empty states—for example, when a user hasn't added anything to their list or when the Spotify API fails to return search results.
+
+<figure className="mt-10">
+  <Image src={mock} alt="Design mock of Jukeboxd" />
+  <figcaption className="text-[gray] text-sm text-center mt-2">
+    The final design mock
+  </figcaption>
+</figure>
+
+## Developing The App
+
+Now comes the fun part—bringing the website to life. Below, I'll break down the technologies I used and explain them in a simple way.
+
+### React Router 7
+
+[React Router](https://reactrouter.com/) is a popular library for managing navigation in React applications. It allows me to create routes using the built-in `<Route>` and `<Routes>` components. Here's a code snippet showing how I used React Router in my website:
+
+```javascript
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout />}>
+      <Route index element={<Home />} />
+      <Route path="new-releases" element={<NewReleases />} />
+
+      <Route path="my-albums" element={<MyAlbumsLayout />}>
+        <Route index element={<ReviewedAlbums />} />
+        <Route path="want-to-listen" element={<WantToListenAlbums />} />
+      </Route>
+
+      <Route path="about" element={<About />} />
+      <Route path="*" element={<NotFound />} />
+    </Route>
+  )
+);
+```
+
+### Tailwind CSS v4.0
+
+[Tailwind CSS](https://tailwindcss.com/) is a utility-first CSS framework that lets me style Jukeboxd using pre-built classes instead of writing custom CSS. Here's a comparison of traditional CSS and Tailwind:
+
+#### Traditional CSS
+
+```css
+.edit-button {
+  margin-left: auto;
+  margin-top: auto;
+  padding: 2px 6px;
+  background-color: var(--primary);
+  font-weight: bold;
+  color: var(--background);
+  border-radius: 2px;
+}
+```
+
+#### Tailwind CSS
+
+```jsx
+<button className="ml-auto mt-auto px-1.5 py-0.5 bg-primary font-bold text-background rounded-sm">
+  Edit Review
+</button>
+```
+
+At first, I thought Tailwind CSS went against the **DRY (Don't Repeat Yourself)** principle since you have to write styles for every component. But after using it, I found it surprisingly convenient. Instead of managing long CSS files, I could build components quickly without worrying about unused styles cluttering my codebase.
+With Tailwind, every interface component is easily disposable, making development more efficient and flexible.
+
+### Vite
+
+[Vite](https://vite.dev/) is a modern tool for building web apps, especially since I use React as my main library. It's faster than traditional bundlers like Webpack because Vite only refreshes the parts of the app that change. I also chose it because the setup is very simple for someone who's not particularly hacky.
+
+## Room for Improvements
+
+Since this project originally served as an opportunity for me to learn React Router and Tailwind CSS, there are a few things I'd like to improve in the future when I have the time. Here are some areas that could use enhancement:
+
+- Currently the app uses localStorage to store reviewed albums. I'd like to implement Firestore authentication and integrate Firestore database functionality into the app.
+- I'd like to replace the "New Releases" page with one that shows personalized recommendations based on users' reviewed albums.
+- Since [App Router](https://nextjs.org/docs/app) was introduced in Next.js 13, I think it would be easier to migrate this project into
+  a Next.js framework. (I'm a big fan of App Router)

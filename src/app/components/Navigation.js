@@ -35,7 +35,7 @@ export default function Navigation() {
   );
 
   const menuListClassName = clsx(
-    "bg-black/80 flex flex-col gap-10 items-center py-8 hover:underline",
+    "bg-black/80 flex flex-col gap-10 items-center py-8",
     isOpen ? "static" : "hidden"
   );
   return (
@@ -59,22 +59,22 @@ export default function Navigation() {
 
         <div className={menuListClassName}>
           <button onClick={handleClick}>
-            <Link href="/" className="text-2xl">
+            <Link href="/" className="text-2xl hover:underline">
               Home
             </Link>
           </button>
           <button onClick={handleClick}>
-            <Link href="/projects" className="text-2xl">
+            <Link href="/projects" className="text-2xl hover:underline">
               Projects
             </Link>
           </button>
           <button onClick={handleClick}>
-            <Link href="/gallery" className="text-2xl">
+            <Link href="/gallery" className="text-2xl hover:underline">
               Gallery
             </Link>
           </button>
           <button onClick={handleClick}>
-            <Link href="/my-corner" className="text-2xl">
+            <Link href="/my-corner" className="text-2xl hover:underline">
               My Corner
             </Link>
           </button>
