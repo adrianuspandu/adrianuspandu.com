@@ -190,7 +190,7 @@ export default function MyCorner() {
               distance="10K"
               pbTime="1:08:13"
               pbDate="May 2024"
-              goalTime="Sub 25"
+              goalTime="Sub 1-Hour"
               goalDate="by end of 2025"
               headingColor="text-purpleAccent"
             />
