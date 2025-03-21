@@ -42,7 +42,7 @@ export default async function ProjectItemPage({ params }) {
 }
 
 export function generateStaticParams() {
-  return [{ slug: "test" }, { slug: "about" }];
+  return [{ slug: "jukeboxd" }, { slug: "my-mensa" }];
 }
 
 export const dynamicParams = true;
