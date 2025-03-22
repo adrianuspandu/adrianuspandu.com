@@ -5,18 +5,6 @@ import HeroImage from "/public/hero-image.svg";
 import BrutalLink from "./components/BrutalLink";
 import ProjectCard from "./components/ProjectCard";
 
-export const metadata = {
-  title: "Adrianus Pandu",
-  description: "A student at FH Aachen who is passionate about frontend web development and UI/UX Design",
-  openGraph: {
-    title: "Adrianus Pandu",
-    description: "A student at FH Aachen who is passionate about frontend web development and UI/UX Design",
-    url: "https://adrianuspandu.vercel.app",
-    siteName: "Adrianus Pandu",
-    type: "website",
-  },
-};
-
 export default function Home() {
   return (
     <div className="[background-image:radial-gradient(circle_at_2px_2px,var(--dottedGrid)_2px,transparent_0)] [background-size:30px_30px]">

@@ -17,6 +17,13 @@ const lexendMega = Lexend_Mega({
 export const metadata = {
   title: "Adrianus Pandu",
   description: "A student at FH Aachen who is passionate about frontend web development and UI/UX Design",
+  openGraph: {
+    title: "Adrianus Pandu",
+    description: "A student at FH Aachen who is passionate about frontend web development and UI/UX Design",
+    url: "https://adrianuspandu.vercel.app",
+    siteName: "Adrianus Pandu",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {

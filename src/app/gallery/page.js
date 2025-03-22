@@ -5,18 +5,6 @@ import { listImages } from "../utils/storage";
 import { useEffect, useState } from "react";
 import Masonry from "react-masonry-css";
 
-export const metadata = {
-  title: "Pandu's Gallery",
-  description: "See all of Adrianus Pandu's photos and beautiful moments",
-  openGraph: {
-    title: "Pandu's Gallery",
-    description: "See all of Adrianus Pandu's photos and beautiful moments",
-    url: "https://adrianuspandu.vercel.app/gallery",
-    siteName: "Adrianus Pandu",
-    type: "website",
-  },
-};
-
 export default function Gallery() {
   const [imagesURL, setImagesURL] = useState([]);
 
