@@ -3,6 +3,22 @@ import { projectsData } from "../../../../data/projectsData";
 import Link from "next/link";
 import backArrow from "../../../../public/icons/back-arrow.svg";
 
+export async function generateMetadata({ params }) {
+  const formattedTitle = params.slug.replace("-", " ");
+
+  return {
+    title: `Project: ${formattedTitle}`,
+    description: `Learn more about Adrianus Pandu's project: ${formattedTitle}.`,
+    openGraph: {
+      title: `Project: ${formattedTitle}`,
+      description: `Learn more about Adrianus Pandu's project: ${formattedTitle}.`,
+      url: `https://adrianuspandu.vercel.app/projects/${params.slug}`,
+      type: "article",
+    },
+  };
+}
+
+
 export default async function ProjectItemPage({ params }) {
   const { slug } = await params;
   const { default: Post } = await import(`../../content/${slug}/${slug}.mdx`);

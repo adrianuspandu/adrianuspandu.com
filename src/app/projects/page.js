@@ -1,6 +1,18 @@
 import { projectsData } from "../../../data/projectsData";
 import ProjectCard from "../components/ProjectCard";
 
+export const metadata = {
+  title: "Pandu's Projects",
+  description: "See all of Adrianus Pandu's Projects in Web Development and Design",
+  openGraph: {
+    title: "Pandu's Projects",
+    description: "See all of Adrianus Pandu's Projects in Web Development and Design",
+    url: "https://adrianuspandu.vercel.app/projects",
+    siteName: "Adrianus Pandu",
+    type: "website",
+  },
+};
+
 export default function Projects() {
   const projectCards = projectsData.map((projectData) => {
     return <ProjectCard key={projectData.name} name={projectData.name} />;

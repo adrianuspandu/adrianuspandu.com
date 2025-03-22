@@ -17,6 +17,18 @@ import beforeSunset from "../../../public/images/posters/before-sunset.jpg"
 import returnOfTheKing from "../../../public/images/posters/return-of-the-king.jpg"
 import se7en from "../../../public/images/posters/se7en.jpg"
 
+export const metadata = {
+  title: "Pandu's Corner",
+  description: "Adrianus Pandu's corner on the internet",
+  openGraph: {
+    title: "Pandu's Corner",
+    description: "Adrianus Pandu's corner on the internet",
+    url: "https://adrianuspandu.vercel.app/my-corner",
+    siteName: "Adrianus Pandu",
+    type: "website",
+  },
+};
+
 export default function MyCorner() {
   return (
     <>
