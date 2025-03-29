@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     name: "adrianuspandu",
-    title: "adrianuspandu.com (Coming Soon)",
+    title: "adrianuspandu.com",
     description:
       "Learn how I created this very website you're visiting right now.",
     img: "projects/adrianuspandu.jpg",

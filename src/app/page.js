@@ -46,7 +46,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-4">
           <ProjectCard name="jukeboxd" />
-          <ProjectCard name="my-mensa" />
+          <ProjectCard name="adrianuspandu" />
           <ProjectCard name="museum-lumina" />
         </div>
       </section>

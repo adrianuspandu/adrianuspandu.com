@@ -1,4 +1,125 @@
-## Coming Soon
+import Image from "next/image"
+import v1 from "./v1.jpg"
+import neobrutalism from "./neobrutalism.jpg"
+import wireframes from "./wireframes.jpg"
+import mock from "./mock.jpg"
+import components from "./components.jpg"
+import responsiveDesign from "./responsive-design.gif"
 
-Hello, I'm still in the process of writing about this project. 
-Please stay tuned!
+## Overview
+
+I wasn't sure if I wanted to dedicate a project article to how I created this website. Mainly because I thought it was lame to consider building your personal website as a project. But I needed to write about it because of how much I learned during the development of this website.
+
+### Why Did I Build This Website?
+
+Actually, this is not the first version of my personal website. It's just a (complete) makeover of a previous design. I wasn't very satisfied with how my website looked at that moment, and it didn't really represent my personality.
+
+<figure className="mt-10">
+  <Image
+    src={v1}
+    alt="Previous version of my personal website in desktop view"
+  />
+  <figcaption className="text-[gray] text-sm text-center mt-2">
+    Previous version of my personal website (December 2024 - March 2025)
+  </figcaption>
+</figure>
+
+Around that time, I only had some HTML and CSS knowledge that I had learned during my first year of university (around 2022). I hadn't learned JavaScript at all, and I only relied on my newly acquired UI/UX design skills. The website was built using [Webflow](https://webflow.com/), a WYSIWYG (What You See Is What You Get) website builder that requires only a bit of CSS knowledge.
+
+Webflow is a great tool, and I highly recommend it, but I wanted to step up my game and code my own website. Around February 2025, I started learning more extensively about web development and wanted to build a project using the [Next.js framework](https://nextjs.org/).
+
+### What Will I Showcase on This Website?
+
+The initial purpose of my personal website is to showcase projects that I build throughout my learning journey. So, I need a dedicated page to organize all my projects. At the moment, I only have a few projects to share, but I imagine that, over time, this will grow.
+
+I'd also like to share pictures, and I don't like the current state of Instagram (or any social media platform, really), so I thought I would have some sort of gallery page. I also need some CTA links to my work-related profiles, such as LinkedIn, GitHub, Dribbble, etc.
+
+Lastly, I also planned to make an about page with a more personal feel. Think of it as a space to share things I like, such as my favorite movies, music, or books.
+
+## Designing the Website
+
+I think design is just as important as development. It makes the development process so much easier by acting as a guideline when building components. It also allows me to iterate on the project blueprint before proceeding with the actual development. Making these decisions early on is much easier than changing things later.
+
+### Neo-Brutalism
+
+I guess I discovered neo-brutalism two years too late. It was a popular design trend in 2020, but it really caught my attention, and I was intrigued by how it looked. I discovered the website [neobrutalism.dev](https://neobrutalism.dev), which provides a reusable library of neo-brutalist components. I was tempted to use the library, but in the end, the point of this project was to familiarize myself with the core concepts of CSS and Tailwind CSS. So, I decided to build all the components myself.
+
+<figure className="mt-10">
+  <Image
+    src={neobrutalism}
+    alt="neobrutalism.dev website"
+  />
+  <figcaption className="text-[gray] text-sm text-center mt-2">
+    neobrutalism.dev website
+  </figcaption>
+</figure>
+
+### From Ideas to Sketches
+
+To bring this neo-brutalist idea to life, I started by creating wireframes to lay out the pages. It’s a great way to generate ideas quickly without too much commitment since sketches require little effort. This also makes it easier to discard ideas without feeling bad about it.
+
+<figure className="mt-10">
+  <Image
+    src={wireframes}
+    alt="Wireframes of adrianuspandu.com"
+  />
+  <figcaption className="text-[gray] text-sm text-center mt-2">
+    Wireframes of the project
+  </figcaption>
+</figure>
+
+### Applying Colors and Typography
+
+Now comes my favorite part of designing interfaces: applying colors and typography. This stage is exciting because once you reach it, your project starts to feel more alive and visually appealing.
+
+<figure className="mt-10">
+  <Image
+    src={mock}
+    alt="Final mock of adrianuspandu.com"
+  />
+  <figcaption className="text-[gray] text-sm text-center mt-2">
+    Final mock of adrianuspandu.com
+  </figcaption>
+</figure>
+
+## Developing the Website
+
+After finalizing my design decisions, I began developing the website. I wasn't sure which framework to choose, but I knew I had to pick one. After all, this was my first time building a website with a frontend framework. After some careful decision-making (that’s a lie), I finally went with [NextJS](https://nextjs.org/). I was blown away by the [App Router](https://nextjs.org/docs/app) feature—it just made perfect sense to use it.
+
+### Reusable Components
+
+Some components are used more often than others, so I started by developing the most crucial ones, such as project cards, buttons, and the navigation bar.
+
+<figure className="mt-10">
+  <Image
+    src={components}
+    alt="Reusable components of adrianuspandu.com"
+  />
+  <figcaption className="text-[gray] text-sm text-center mt-2">
+    Reusable components of adrianuspandu.com
+  </figcaption>
+</figure>
+
+### Responsive Design
+
+It's important that the website is accessible not only on desktops but also on smaller screen sizes such as tablets and smartphones. This ensures a seamless user experience across devices. For instance, the grid columns of the project cards reduce as the screen size gets smaller.
+
+<figure className="mt-10">
+  <Image
+    src={responsiveDesign}
+    alt="Developing for responsive design"
+  />
+  <figcaption className="text-[gray] text-sm text-center mt-2">
+    Developing for responsive design
+  </figcaption>
+</figure>
+
+### Notable Tech Stacks  
+
+Throughout this project, I used the following technologies:  
+
+- **[Next.js](https://nextjs.org/)** – A powerful React framework that enables server-side rendering, static site generation, and optimized performance for modern web applications.  
+- **[React](https://react.dev/)** – A popular JavaScript library for building dynamic and interactive user interfaces with reusable components.  
+- **[Tailwind CSS](https://tailwindcss.com/)** – A utility-first CSS framework that simplifies styling by providing a flexible and efficient way to design responsive user interfaces.  
+- **[Firebase](https://firebase.google.com/)** – Used to store images for the gallery page, Firebase offers a scalable and real-time backend solution with cloud storage and authentication features.  
+- **[Next MDX](https://mdxjs.com/)** – Allows Markdown files to be used within the project while supporting interactive components, making it ideal for writing articles with embedded React elements.  
