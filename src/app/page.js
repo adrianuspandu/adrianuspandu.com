@@ -19,9 +19,8 @@ export default function Home() {
             <span className="text-yellowAccent">take a scroll</span> ~
           </h1>
           <p className="mb-7 md:min-w-md">
-            Hi, My name is Pandu! I'm a student at Aachen University of Applied
-            Sciences, passionate about <strong>Frontend Web Development</strong>{" "}
-            and <strong>UI/UX Design</strong>.
+            Hi, My name is Pandu! I'm an electrical engineering student at Aachen University of Applied
+            Sciences, passionate about <strong>Frontend Web Development</strong>.
           </p>
           <div className="flex flex-wrap flex-row justify-center md:justify-start items-center gap-10">
             <IconBox />
