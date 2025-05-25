@@ -19,8 +19,8 @@ export default function Home() {
             <span className="text-yellowAccent">take a scroll</span> ~
           </h1>
           <p className="mb-7 md:min-w-md">
-            Hi, My name is Pandu! I'm an electrical engineering student at Aachen University of Applied
-            Sciences, passionate about <strong>Frontend Web Development</strong>.
+            Hi, My name is Pandu! I'm an engineering student at Aachen University of Applied
+            Sciences, who is passionate about <strong>iOS Development and Digital Product Design</strong>.
           </p>
           <div className="flex flex-wrap flex-row justify-center md:justify-start items-center gap-10">
             <IconBox />
@@ -46,7 +46,10 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-4">
           <ProjectCard name="jukeboxd" />
           <ProjectCard name="adrianuspandu" />
-          <ProjectCard name="museum-lumina" />
+          <ProjectCard 
+            name="museum-lumina"
+            opensInNewTab={true}
+          />
         </div>
       </section>
     </div>

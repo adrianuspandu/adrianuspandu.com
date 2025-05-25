@@ -1,0 +1,147 @@
+import Image from "next/image"
+import GOTCharacters from "./got-characters.jpg"
+import HabitTracker from "./habit-tracker.jpg"
+import Multizoo from "./multizoo.jpg"
+import Recipes from "./recipes.jpg"
+import RockPaperScissors from "./rock-paper-scissors.jpg"
+import MiniProjects from "./mini-projects.jpg"
+
+
+## Overview
+
+This is a collection of swift projects that I created during the first 2 months of learning Swift.
+
+<figure className="mt-10">
+  <Image
+    src={MiniProjects}
+    alt="Mini Projects"
+  />
+  <figcaption className="text-[gray] text-sm text-center mt-2">
+    5 Selected Swift Mini Projects
+  </figcaption>
+</figure>
+
+## 1. **Game Of Thrones Characters**
+
+A SwiftUI Application that displays great houses and characters in the Game Of Thrones TV Series. The data was bootstrapped on first launch from [Thrones API](https://thronesapi.com)
+
+<figure className="mt-10">
+  <Image
+    src={GOTCharacters}
+    alt="Game Of Thrones Characters App Screens"
+  />
+  <figcaption className="text-[gray] text-sm text-center mt-2">
+    Screenshots of the app
+  </figcaption>
+</figure>
+
+
+**GitHub:** [github.com/adrianuspandu/got-characters](https://github.com/adrianuspandu/got-characters)
+
+**Learned Concepts:**
+- SwiftData Models and Relationships
+- Async Image Loading
+- LazyVGrid
+
+
+
+## 2. **Multizoo**
+
+Multiplication game for children developed using the SwiftUI framework 
+
+<figure className="mt-10">
+  <Image
+    src={Multizoo}
+    alt="Multizoo App Screens"
+  />
+  <figcaption className="text-[gray] text-sm text-center mt-2">
+    Screenshots of the app
+  </figcaption>
+</figure>
+
+**GitHub:** [github.com/adrianuspandu/multizoo](https://github.com/adrianuspandu/multizoo)
+
+**Learned Concepts:**
+- Utilizing the assets catalog to use images and custom colors
+- Using Built-in SwiftUI views such as Stepper and Picker to handle user input
+- Implicit animations
+
+
+
+## 3. **Habit Tracker App**
+
+A simple habit tracker app made in SwiftUI 
+
+<figure className="mt-10">
+  <Image
+    src={HabitTracker}
+    alt="Habit Tracker App Screens"
+  />
+  <figcaption className="text-[gray] text-sm text-center mt-2">
+    Screenshots of the app
+  </figcaption>
+</figure>
+
+**GitHub:** [github.com/adrianuspandu/habit-tracker](https://github.com/adrianuspandu/habit-tracker)
+
+**Learned Concepts:**
+
+- Navigation using SwiftUI's built in NavigationStack and NavigationLink views
+- UserDefaults for data persistance
+- Dynamic lists using ForEach and List
+- SwiftUI's built in alert dialogs
+- Codable, JSONEncoder, JSONDecoder to encode/decode custom habit objects
+- sheet() and dismiss() modal views for adding habits
+
+
+
+
+
+## 4. **Recipe App**
+
+Displays Recipes from [dummyjson.com/recipes](dummyjson.com/recipes)
+
+<figure className="mt-10">
+  <Image
+    src={Recipes}
+    alt="Recipe App Screens"
+  />
+  <figcaption className="text-[gray] text-sm text-center mt-2">
+    Screenshots of the app
+  </figcaption>
+</figure>
+
+**GitHub:** [github.com/adrianuspandu/recipes-uikit](https://github.com/adrianuspandu/recipes-uikit)
+
+**Learned Concepts:**
+- Fetching Data from an API
+- UITableView
+- UINavigationController
+- Converting JSON Data into simple models using @Codable
+
+
+
+## 5. **Rock Paper Scissors Game**
+
+Rock Paper Scissors is a SwiftUI game to train your brain to react quickly. The app will give you a random move (rock, papers, or scissors) and a random instruction between "Win" or "Lose". The user must pick a move to either "win" or "lose" the game depending on the app state.
+
+<figure className="mt-10">
+  <Image
+    src={RockPaperScissors}
+    alt="Rock Paper Scissors App Screens"
+  />
+  <figcaption className="text-[gray] text-sm text-center mt-2">
+    Screenshots of the app
+  </figcaption>
+</figure>
+
+**GitHub:** [github.com/adrianuspandu/rock-paper-scissors](https://github.com/adrianuspandu/rock-paper-scissors)
+
+**Learned Concepts:**
+- @State – Managing view state like score, alerts, and game logic
+- alert() – Showing result feedback modally
+- ZStack, VStack, HStack – SwiftUI layout system
+- Using custom views like MoveButton for cleaner code
+- Game logic using enums and switch statements
+- Randomization with Bool.random() and Int.random(in:)
+

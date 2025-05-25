@@ -63,7 +63,7 @@ export default function MyCorner() {
 
             <p className="text-sm lg:text-base max-w-lg">
               Pandu is an electrical engineering student at FH Aachen. He is
-              currently training to be a CSS wizard and a Javascript master.
+              currently learning about iOS Development and Digital Product Design.
               Outside of coding, he enjoys running long distance, listening to
               good music, and playing bass.
             </p>
@@ -208,10 +208,10 @@ export default function MyCorner() {
             />
             <MilestoneCard
               distance="21,1K"
-              pbTime="N/A"
-              pbDate="N/A"
-              goalTime="Finish"
-              goalDate="by end of 2025"
+              pbTime="2:31:59"
+              pbDate="April 2025"
+              goalTime="Sub 2-Hr"
+              goalDate="by end of 2026"
               headingColor="text-pinkAccent"
             />
             <MilestoneCard
@@ -219,7 +219,7 @@ export default function MyCorner() {
               pbTime="N/A"
               pbDate="N/A"
               goalTime="Finish"
-              goalDate="by end of 2026"
+              goalDate="by end of 2027"
               headingColor="text-yellowAccent"
             />
           </div>

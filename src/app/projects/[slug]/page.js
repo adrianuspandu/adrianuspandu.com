@@ -58,7 +58,7 @@ export default async function ProjectItemPage({ params }) {
 }
 
 export function generateStaticParams() {
-  return [{ slug: "jukeboxd" }, { slug: "my-mensa" }];
+  return [{ slug: "jukeboxd" }, { slug: "adrianuspandu" } , { slug: "my-mensa" } , { slug: "bondi" } , { slug: "swift-mini-projects" } , { slug: "museum-lumina" }];
 }
 
 export const dynamicParams = true;

@@ -40,7 +40,14 @@ export default function ProjectCard({ name }) {
       <h3 className="font-bold text-xl lg:text-3xl">{projectData.title}</h3>
       <p className="text-md lg:text-xl text-grayText">{projectData.description}</p>
       <div className="flex flex-row flex-wrap gap-2">{projectTags}</div>
-      <BrutalLink href={projectData.href} newTab={false} className="bg-secondary mt-auto">Go to project</BrutalLink>
+      <BrutalLink 
+        href={projectData.href} 
+        newTab={false} 
+        className="bg-secondary mt-auto"
+        opensInNewTab={projectData.opensInNewTab}
+      >
+        Go to project
+      </BrutalLink>
     </div>
   );
 }

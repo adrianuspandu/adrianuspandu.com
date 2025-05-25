@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function Projects() {
   const projectCards = projectsData.map((projectData) => {
-    return <ProjectCard key={projectData.name} name={projectData.name} />;
+    return <ProjectCard key={projectData.name} name={projectData.name} opensInNewTab={projectData.opensInNewTab} />;
   });
   return (
     <>
