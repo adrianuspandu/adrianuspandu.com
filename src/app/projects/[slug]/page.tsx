@@ -27,7 +27,7 @@ export async function generateMetadata({ params }) {
 
 export default async function ProjectItemPage({ params }: ProjectItemPageProps) {
   const { slug } = await params;
-  const { default: Post } = await import(`../../content/${slug}/${slug}.mdx`);
+  const { default: Post } = await import(`/src/content/${slug}/${slug}.mdx`);
 
   const projectData = projectsData.find((project) => project.name === slug);
 
