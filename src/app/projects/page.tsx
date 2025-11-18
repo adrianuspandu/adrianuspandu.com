@@ -1,5 +1,5 @@
-import { projectsData } from "/data/projectsData.ts";
 import APProjectCard from "../../components/APProjectCard";
+import { projectsData } from "../../data/projectsData";
 
 export const metadata = {
   title: "Pandu's Projects",

@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { projectsData } from "/data/projectsData.ts";
+
 import Link from "next/link";
 import backArrow from "/public/icons/back-arrow.svg";
+import { projectsData } from "../../../data/projectsData";
 
 export async function generateMetadata({ params }) {
   const formattedTitle = params.slug.replace("-", " ");
