@@ -29,7 +29,7 @@ export class FirebaseService {
     };
   }
 
-  private async getImageURL(filePath: string): Promise<string | null> {
+  public static async getImageURL(filePath: string): Promise<string | null> {
     try {
       const pathReference = ref(FirebaseService.shared.storage, filePath);
       const url = await getDownloadURL(pathReference);
@@ -40,7 +40,7 @@ export class FirebaseService {
     }
   }
 
-  private async listImages(folderPath = "images/"): Promise<string[]> {
+  public static async listImages(folderPath = "images/"): Promise<string[]> {
     try {
       const folderRef = ref(FirebaseService.shared.storage, folderPath);
       const result = await listAll(folderRef);

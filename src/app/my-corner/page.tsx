@@ -1,8 +1,8 @@
 import Image from "next/image";
 import profilePicture from "/public/images/profile-picture.jpg";
-import MilestoneCard from "../components/MilestoneCard";
-import FilmPoster from "../components/FilmPoster";
-import AlbumPick from "../components/AlbumPick";
+import MilestoneCard from "../../components/APMilestoneCard";
+import FilmPoster from "../../components/APFilmPoster";
+import AlbumPick from "../../components/APAlbumPick";
 
 // Album Covers Import
 import blue from "../../../public/images/albums/blue.jpg"

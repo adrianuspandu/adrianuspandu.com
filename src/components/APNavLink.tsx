@@ -1,11 +1,14 @@
-"use client";
-
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function BrutalNavLink({ children, href }) {
-  const pathname = usePathname();
-  const isActive = pathname === href;
+interface APNavLinkProps {
+  children: React.ReactNode;
+  href: string;
+}
+
+export default function APNavLink({ children, href }: APNavLinkProps) {
+  const pathname: string = usePathname();
+  const isActive: boolean = pathname === href;
 
   return (
     <Link

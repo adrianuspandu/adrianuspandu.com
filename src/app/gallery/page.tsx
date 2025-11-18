@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { listImages } from "../utils/storage";
+import { FirebaseService } from "../../utils/FirebaseService";
 import { useEffect, useState } from "react";
 import Masonry from "react-masonry-css";
 
@@ -10,7 +10,7 @@ export default function Gallery() {
 
   useEffect(() => {
     const fetchImages = async () => {
-      const urls = await listImages("images/");
+      const urls = await FirebaseService.listImages("images/");
       setImagesURL(urls);
     };
     fetchImages();

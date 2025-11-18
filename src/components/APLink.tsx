@@ -1,8 +1,15 @@
 import Link from "next/link";
 import Image from "next/image"
-import NewTab from "../../../public/icons/new-tab.svg"
+import NewTab from "/public/icons/new-tab.svg"
 
-export default function BrutalLink({ children, href, className, opensInNewTab = false }) {
+interface APLinkProps {
+  children: React.ReactNode;
+  href: string;
+  className: string;
+  opensInNewTab: boolean;
+}
+
+export default function APLink({ children, href, className, opensInNewTab }: APLinkProps) {
   return (
     <Link
       href={href}

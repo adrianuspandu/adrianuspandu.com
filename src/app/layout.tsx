@@ -1,8 +1,8 @@
+import React from "react";
 import { Lexend, Lexend_Mega } from "next/font/google";
 import "./globals.css";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
-import app from "./utils/FirebaseService";
+import APNavigation from "../components/APNavigation";
+import APFooter from "../components/APFooter";
 
 const lexend = Lexend({
   variable: "--font-lexend",
@@ -28,7 +28,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
@@ -55,9 +55,9 @@ export default function RootLayout({ children }) {
       </head>
 
       <body className={`${lexend.variable} ${lexendMega.variable} antialiased`}>
-        <Navigation />
+        <APNavigation />
         <main>{children}</main>
-        <Footer />
+        <APFooter />
       </body>
     </html>
   );
