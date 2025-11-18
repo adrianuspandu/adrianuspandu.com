@@ -5,15 +5,15 @@ import APFooter from "../components/APFooter";
 import { lexend, lexendMega } from "../utils/fonts";
 
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Adrianus Pandu",
   description:
-    "A student at FH Aachen who is passionate about frontend web development and UI/UX Design",
+    "A student at FH Aachen who is passionate about iOS development and Digital Product Design",
   openGraph: {
     title: "Adrianus Pandu",
     description:
-      "A student at FH Aachen who is passionate about frontend web development and UI/UX Design",
-    url: "https://adrianuspandu.vercel.app",
+      "A student at FH Aachen who is passionate about frontend web development and Digital Product Design",
+    url: "https://adrianuspandu.com",
     siteName: "Adrianus Pandu",
     type: "website",
   },
