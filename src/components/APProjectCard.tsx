@@ -1,6 +1,6 @@
 "use client";
 
-import { projectsData } from "../../data/projectsData";
+import { projectsData } from "../data/projectsData";
 import Image from "next/image";
 import APLink from "./APLink";
 import { useEffect, useState } from "react";
