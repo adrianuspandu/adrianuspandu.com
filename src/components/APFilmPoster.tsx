@@ -1,5 +1,12 @@
-import Image from "next/image";
-export default function FilmPoster({ src, title, year }) {
+import Image, { StaticImageData } from "next/image";
+
+interface APFilmPosterProps {
+  src: StaticImageData;
+  title: string;
+  year: string;
+}
+
+export default function APFilmPoster({ src, title, year }: APFilmPosterProps) {
   return (
     <div className="max-w-[300px]">
       <Image

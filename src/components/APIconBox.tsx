@@ -5,7 +5,7 @@ import Github from "/public/icons/github.svg";
 import LinkedIn from "/public/icons/linkedin.svg";
 import Link from "next/link";
 
-export default function IconBox() {
+export default function APIconBox() {
   const icons = [
     {
       src: LinkedIn,
@@ -37,5 +37,6 @@ export default function IconBox() {
       </Link>
     );
   });
+  
   return <div className="inline-flex flex-row gap-4">{iconItems}</div>;
 }

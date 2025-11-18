@@ -1,7 +1,13 @@
 import Image from "next/image";
-import { projectsData } from "../../../../data/projectsData";
+import { projectsData } from "/data/projectsData.ts";
 import Link from "next/link";
-import backArrow from "../../../../public/icons/back-arrow.svg";
+import backArrow from "/public/icons/back-arrow.svg";
+
+interface ProjectItemPageProps {
+  params: {
+    slug: string;
+  };
+}
 
 export async function generateMetadata({ params }) {
   const formattedTitle = params.slug.replace("-", " ");
@@ -19,7 +25,7 @@ export async function generateMetadata({ params }) {
 }
 
 
-export default async function ProjectItemPage({ params }) {
+export default async function ProjectItemPage({ params }: ProjectItemPageProps) {
   const { slug } = await params;
   const { default: Post } = await import(`../../content/${slug}/${slug}.mdx`);
 
@@ -48,7 +54,7 @@ export default async function ProjectItemPage({ params }) {
       </section>
       <article className="mt-10 max-w-xl mx-auto px-4">
         <Link className="underline hover:text-white" href="/projects">
-          <Image className="inline mr-2" src={backArrow} />
+          <Image className="inline mr-2" src={backArrow} alt={""} />
           Back to all projects
         </Link>
         <Post />
@@ -58,7 +64,7 @@ export default async function ProjectItemPage({ params }) {
 }
 
 export function generateStaticParams() {
-  return [{ slug: "jukeboxd" }, { slug: "adrianuspandu" } , { slug: "my-mensa" } , { slug: "bondi" } , { slug: "swift-mini-projects" } , { slug: "museum-lumina" }];
+  return [{ slug: "jukeboxd" }, { slug: "adrianuspandu" }, { slug: "my-mensa" }, { slug: "bondi" }, { slug: "swift-mini-projects" }, { slug: "museum-lumina" }];
 }
 
 export const dynamicParams = true;

@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import Copyright from "/public/icons/copyright.svg";
-import IconBox from "./IconBox";
+import IconBox from "./APIconBox";
 
-export default function Footer() {
+export default function APFooter() {
   const currentYear = new Date().getFullYear();
+
   return (
     <footer className="flex flex-col items-center gap-4 py-20 border-t-16 border-black mt-20">
       <Link

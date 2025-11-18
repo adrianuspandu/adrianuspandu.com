@@ -1,4 +1,4 @@
-export const projectsData = [
+export const projectsData: Project[] = [
   {
     name: "swift-mini-projects",
     title: "Swift Mini Projects",

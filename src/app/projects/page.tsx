@@ -1,12 +1,14 @@
-import { projectsData } from "../../../data/projectsData";
-import ProjectCard from "../components/ProjectCard";
+import { projectsData } from "/data/projectsData.ts";
+import APProjectCard from "../../components/APProjectCard";
 
 export const metadata = {
   title: "Pandu's Projects",
-  description: "See all of Adrianus Pandu's Projects in Web Development and Design",
+  description:
+    "See all of Adrianus Pandu's Projects in Web Development and Design",
   openGraph: {
     title: "Pandu's Projects",
-    description: "See all of Adrianus Pandu's Projects in Web Development and Design",
+    description:
+      "See all of Adrianus Pandu's Projects in Web Development and Design",
     url: "https://adrianuspandu.vercel.app/projects",
     siteName: "Adrianus Pandu",
     type: "website",
@@ -15,7 +17,12 @@ export const metadata = {
 
 export default function Projects() {
   const projectCards = projectsData.map((projectData) => {
-    return <ProjectCard key={projectData.name} name={projectData.name} opensInNewTab={projectData.opensInNewTab} />;
+    return (
+      <APProjectCard
+        key={projectData.name}
+        name={projectData.name}
+      />
+    );
   });
   return (
     <>

@@ -1,6 +1,12 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-export default function AlbumPick({ src, title, artist }) {
+interface APAlbumPickProps {
+  src: StaticImageData;
+  title: string;
+  artist: string;
+}
+
+export default function APAlbumPick({ src, title, artist }: APAlbumPickProps) {
   return (
     <div className="max-w-[300px]">
       <Image

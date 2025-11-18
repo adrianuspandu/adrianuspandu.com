@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import BrutalNavLink from "./BrutalNavLink";
+import APNavLink from "./APNavLink";
 import clsx from "clsx";
 import Link from "next/link";
 
@@ -41,10 +41,10 @@ export default function Navigation() {
   return (
     <>
       <nav className={navClassName}>
-        <BrutalNavLink href="/">Home</BrutalNavLink>
-        <BrutalNavLink href="/projects">Projects</BrutalNavLink>
-        <BrutalNavLink href="/gallery">Gallery</BrutalNavLink>
-        <BrutalNavLink href="/my-corner">My Corner</BrutalNavLink>
+        <APNavLink href="/">Home</APNavLink>
+        <APNavLink href="/projects">Projects</APNavLink>
+        <APNavLink href="/gallery">Gallery</APNavLink>
+        <APNavLink href="/my-corner">My Corner</APNavLink>
       </nav>
 
       <nav className="z-1 fixed lg:hidden flex flex-col w-full backdrop-blur-lg">

@@ -40,3 +40,5 @@ export const galleryData = [
         alt: "Heidelberg"
     },
 ]
+
+export default galleryData;

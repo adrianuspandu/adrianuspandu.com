@@ -1,13 +1,15 @@
 import clsx from "clsx";
 
-export default function MilestoneCard({
-  distance,
-  pbTime,
-  pbDate,
-  goalTime,
-  goalDate,
-  headingColor
-}) {
+interface APMilestoneCardProps {
+  distance: string;
+  pbTime: string;
+  pbDate: string;
+  goalTime: string;
+  goalDate: string;
+  headingColor: string;
+}
+
+export default function APMilestoneCard({ distance, pbTime, pbDate, goalTime, goalDate,headingColor }: APMilestoneCardProps) {
   const headingClassName = clsx(
     "text-6xl md:text-8xl font-display", headingColor
   )

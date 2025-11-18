@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import Image from "next/image";
-import IconBox from "./components/IconBox";
+import APIconBox from "../components/APIconBox";
 import HeroImage from "/public/hero-image.svg";
-import BrutalLink from "./components/BrutalLink";
-import ProjectCard from "./components/ProjectCard";
+import APLink from "../components/APLink";
+import APProjectCard from "../components/APProjectCard";
 
 export default function Home() {
   return (
@@ -19,14 +19,19 @@ export default function Home() {
             <span className="text-yellowAccent">take a scroll</span> ~
           </h1>
           <p className="mb-7 md:min-w-md">
-            Hi, My name is Pandu! I'm an engineering student at Aachen University of Applied
-            Sciences, who is passionate about <strong>iOS Development and Digital Product Design</strong>.
+            Hi, My name is Pandu! I'm an engineering student at Aachen
+            University of Applied Sciences, who is passionate about{" "}
+            <strong>iOS Development and Digital Product Design</strong>.
           </p>
           <div className="flex flex-wrap flex-row justify-center md:justify-start items-center gap-10">
-            <IconBox />
-            <BrutalLink href="/projects" newTab={false} className="bg-secondary">
+            <APIconBox />
+            <APLink
+              href="/projects"
+              opensInNewTab={false}
+              className="bg-secondary"
+            >
               See projects
-            </BrutalLink>
+            </APLink>
           </div>
         </div>
         <Image
@@ -44,12 +49,9 @@ export default function Home() {
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-4">
-          <ProjectCard name="jukeboxd" />
-          <ProjectCard name="adrianuspandu" />
-          <ProjectCard 
-            name="museum-lumina"
-            opensInNewTab={true}
-          />
+          <APProjectCard name="jukeboxd" />
+          <APProjectCard name="adrianuspandu" />
+          <APProjectCard name="museum-lumina" />
         </div>
       </section>
     </div>
