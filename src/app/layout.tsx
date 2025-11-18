@@ -1,18 +1,9 @@
 import React from "react";
-import { Lexend, Lexend_Mega } from "next/font/google";
 import "./globals.css";
 import APNavigation from "../components/APNavigation";
 import APFooter from "../components/APFooter";
+import { lexend, lexendMega } from "../utils/fonts";
 
-const lexend = Lexend({
-  variable: "--font-lexend",
-  subsets: ["latin"],
-});
-
-const lexendMega = Lexend_Mega({
-  variable: "--font-lexend-mega",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Adrianus Pandu",
