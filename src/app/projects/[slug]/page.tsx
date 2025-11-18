@@ -3,12 +3,6 @@ import { projectsData } from "/data/projectsData.ts";
 import Link from "next/link";
 import backArrow from "/public/icons/back-arrow.svg";
 
-interface ProjectItemPageProps {
-  params: {
-    slug: string;
-  };
-}
-
 export async function generateMetadata({ params }) {
   const formattedTitle = params.slug.replace("-", " ");
 
@@ -25,7 +19,7 @@ export async function generateMetadata({ params }) {
 }
 
 
-export default async function ProjectItemPage({ params }: ProjectItemPageProps) {
+export default async function ProjectItemPage({ params }) {
   const { slug } = await params;
   const { default: Post } = await import(`/src/content/${slug}/${slug}.mdx`);
 
